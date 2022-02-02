@@ -1,0 +1,163 @@
+@media screen and (max-width: 1920px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    background-color: burlywood;
+    height: 800px;
+  }
+  .header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #093536;
+  }
+  .navBar {
+    width: 100%;
+    background-color: black;
+  }
+  .navBar a {
+    color: blanchedalmond;
+  }
+  .wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+    gap: 20px;
+  }
+  .wrapper .aboutMe {
+    background-color: chocolate;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .wrapper .title {
+    background-color: #cf7d42;
+    -ms-grid-column: 2;
+    grid-column: 2 / 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .wrapper impLinks {
+    background-color: #69462c;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .wrapper impLinks a {
+    color: wheat;
+  }
+  .wrapper .chipsRange {
+    background-color: #e6b18c;
+    -ms-grid-column: 2;
+    grid-column: 2 / 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .footer {
+    width: 100%;
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    background-color: #d49b50;
+  }
+  .header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #2f5b5c;
+  }
+  .navBar {
+    width: 100%;
+    background-color: #660707;
+  }
+  .navBar a {
+    color: #bba686;
+  }
+  .wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -ms-grid;
+    display: grid;
+    width: 720px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "first_tab" "second_tab" "third_tab" "forth_tab";
+    gap: 20px;
+  }
+  .aboutMe {
+    background-color: chocolate;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: first_tab;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .title {
+    background-color: #cf7d42;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: second_tab;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .impLinks {
+    background-color: #69462c;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: third_tab;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .impLinks a {
+    color: wheat;
+  }
+  .chipsRange {
+    background-color: #e6b18c;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: forth_tab;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .footer {
+    width: 100%;
+    background-color: #4e6917;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=homePage.css.map */
